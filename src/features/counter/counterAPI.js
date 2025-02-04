@@ -1,5 +1,5 @@
-export const fetchCount = (amount = 1)=> {
-    return new Promise <{ data }>(resolve => 
-        setTimeout(() => resolve({data}), 500)
-    )
-}
+export const fetchCount = (amount = 1) => {
+    return new Promise(resolve => 
+        setTimeout(() => resolve({ data: amount }), 500)
+    );
+};
